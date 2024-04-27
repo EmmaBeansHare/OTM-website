@@ -203,3 +203,506 @@ ul li:hover{
     background-color: rgb(194, 194, 194);
     margin-top: -70px;
 }
+
+@media screen and (max-width: 390px){
+    br{
+        display: none;
+    }
+
+    header{
+        height: 80px;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    #brand{
+        font-size: 2.4em;
+        font-weight: 100;
+        margin-left: 10px;
+    }
+
+    .mobile-menu{
+        top: 60px;
+    }
+
+    ul {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .mainbody{
+        padding: 20px;
+        margin-top: -10px;
+    }
+
+    .mainbody h1{
+        font-size: 2.6em;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .textone{
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    
+    .textonetext{
+        white-space: normal;
+    }
+
+    .textonetext p{
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .textone img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .texttwo{
+        align-items: center;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+    
+    .texttwotext p{
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .texttwo img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .textthree{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 60;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    .textfour{
+        white-space: normal;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 40px;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .textfour a{
+        text-align: center;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 499px){
+    br{
+        display: none;
+    }
+
+    header{
+        height: 80px;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    #brand{
+        font-size: 2.6em;
+        font-weight: 100;
+        margin-left: 10px;
+    }
+
+    .mobile-menu{
+        top: 60px;
+    }
+
+    ul {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -40px;
+    }
+
+    .mainbody h1{
+        font-size: 2.8em;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .textone{
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    
+    .textonetext{
+        white-space: normal;
+    }
+
+    .textonetext p{
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .textone img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .texttwo{
+        align-items: center;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+    
+    .texttwotext p{
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .texttwo img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .textthree{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 60;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    .textfour{
+        white-space: normal;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 40px;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .textfour a{
+        text-align: center;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 787px){
+    br{
+        display: none;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    #brand{
+        font-size: 2.8em;
+        font-weight: 100;
+    }
+
+    ul {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -10px;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .textone{
+        align-items: center;
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    
+    .textonetext{
+        white-space: normal;
+    }
+
+    .textonetext p{
+        margin-top: -20px;
+    }
+
+    .textone img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .texttwo{
+        align-items: center;
+        margin-top: 120px;
+        flex-direction: column;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+    
+    .texttwotext p{
+        margin-top: -20px;
+    }
+
+    .texttwo img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .textthree{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 60;
+        text-align: left;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    .textfour{
+        white-space: normal;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 40px;
+        text-align: left;
+    }
+
+    .textfour a{
+        text-align: center;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 788px) and (max-width: 910px){
+    br{
+        display: none;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    #brand{
+        font-size: 2.8em;
+        font-weight: 100;
+    }
+
+    ul {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -10px;
+    }
+
+    .textone{
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .textonetext{
+        white-space: normal;
+    }
+
+    .textonetext p{
+        margin-top: -20px;
+    }
+
+    .textone img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .texttwo{
+        align-items: center;
+        margin-top: 120px;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+    
+    .texttwotext p{
+        margin-top: -20px;
+    }
+
+    .texttwo img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .textthree{
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 60px;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    .textfour{
+        white-space: normal;
+        padding-left: 130px;
+        padding-right: 130px;
+        margin-top: 40px;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 911px) and (max-width: 1024px){
+    br{
+        display: none;
+    }
+
+    #brand{
+        font-size: 2.8em;
+        font-weight: 100;
+    }
+
+    ul {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -20px;
+    }
+
+    .textone{
+        margin-top: 90px;
+    }
+
+    .textonetext{
+        white-space: normal;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+
+    .textthree{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    .textfour{
+        white-space: normal;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1190px){
+    br{
+        display: none;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -20px;
+    }
+
+    .textone{
+        margin-top: 90px;
+    }
+
+    .textonetext{
+        white-space: normal;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    .textfour{
+        white-space: normal;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+
+}

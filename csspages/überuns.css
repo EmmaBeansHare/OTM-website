@@ -138,3 +138,134 @@ ul li:hover{
     background-color: rgb(194, 194, 194);
     margin-top: -70px;
 }
+
+@media screen and (max-width: 910px){
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 478px){
+    br{
+    display: none;
+    }
+
+    header{
+    height: 70px;
+    }
+
+    #brand{
+    font-size: 2.4em;
+    margin-left: 10px;
+    }
+
+    .mobile-menu{
+    top: 50px;
+    }
+    
+    .mainbody{
+    padding: 40px;
+    margin-top: -40px;
+    }
+
+    .mainbody h1{
+    font-size: 2.5em;
+    }
+
+    .mainbody hr{
+    width: 100%;
+    }
+    
+    .mainbody p{
+    white-space: normal;
+    font-size: 0.8em;
+    margin-top: 30px;
+        }
+
+    .mainbody img{
+    height: 300px;
+    width: 300px;
+    margin-top: 40px;
+    }
+    
+    #bottomnavbar{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 479px) and (max-width: 680px){
+    br{
+    display: none;
+    }
+
+    header{
+    height: 80px;
+    }
+
+    #brand{
+    font-size: 2.6em;
+    margin-left: 10px;
+    }
+
+    .mobile-menu{
+    top: 60px;
+    }
+    
+    .mainbody{
+    padding: 40px;
+    margin-top: -40px;
+    }
+
+    .mainbody h1{
+    font-size: 2.7em;
+    }
+
+    .mainbody hr{
+    width: 100%;
+    }
+    
+    .mainbody p{
+    white-space: normal;
+    font-size: 0.9em;
+    margin-top: 30px;
+    }
+
+    .mainbody img{
+    height: 400px;
+    width: 400px;
+    margin-top: 40px;
+    }
+    
+    #bottomnavbar{
+    margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 681px) and (max-width: 1215px){
+   
+    br{
+    display: none;
+    }
+
+    .mainbody{
+        padding: 70px;
+        margin-top: -30px;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .mainbody p{
+        white-space: normal;
+
+    }
+
+    #bottomnavbar{
+        margin-top: 30px;
+    }
+}

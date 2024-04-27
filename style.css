@@ -315,3 +315,328 @@ ul li:hover{
     background-color: rgb(194, 194, 194);
     margin-top: -70px;
 }
+
+@media screen and (max-width: 520px){
+    br{
+        display: none;
+    }
+
+    header{
+        height: 70px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    #brand{
+        font-size: 2.7em;
+        margin-left: 5px;
+    }
+
+    .mobile-menu{
+        top: 70px;
+    }
+
+    .mainbody{
+        padding: 40px;
+        margin-top: -30px;
+        margin-bottom: 200px;
+    }
+
+    .mainbody h1{
+        white-space: normal;
+        margin-top: 40px;
+        font-size: 2em;
+    }
+
+    .mainbody h3{
+        white-space: normal;
+        font-size: 1.4em;
+        margin-top: 40px;
+    }
+
+    .mainbody p{
+        white-space: normal;
+        font-size: 0.9em;
+    }
+
+    .mainbody button{
+        margin-top: 10px;
+        height: 40px;
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .mainbody img{
+        margin-top: 10px;
+        float: center;
+        height: 300px;
+        width: auto;
+
+    }
+
+    .transport{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .montage{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .überuns{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width:630px){
+    br{
+        display: none;
+    }
+
+    header{
+        height: 70px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    #brand{
+        font-size: 2.7em;
+    }
+
+    .mobile-menu{
+        top: 70px;
+    }
+
+    .mainbody{
+        padding: 40px;
+        margin-top: -30px;
+        margin-bottom: 200px;
+    }
+
+    .mainbody h1{
+        white-space: normal;
+        margin-top: 40px;
+        font-size: 2.5em;
+    }
+
+    .mainbody h3{
+        white-space: normal;
+        font-size: 1.6em;
+        margin-top: 40px;
+    }
+
+    .mainbody p{
+        white-space: normal;
+    }
+
+    .mainbody button{
+        margin-top: 10px;
+        height: 50px;
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .mainbody img{
+        margin-top: 10px;
+        float: center;
+
+    }
+
+    .transport{
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .montage{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    .überuns{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width:631px) and (max-width: 767px){
+    br{
+        display: none;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .mainbody{
+        padding: 40px;
+        margin-top: -30px;
+        margin-bottom: 200px;
+    }
+
+    .mainbody h1{
+        white-space: normal;
+        margin-top: 40px;
+    }
+
+    .mainbody h3{
+        white-space: normal;
+    }
+
+    .mainbody hr{
+    }
+
+    .mainbody p{
+        white-space: normal;
+    }
+
+    .mainbody button{
+        margin-top: 10px;
+    }
+
+    .mainbody img{
+        margin-top: -34px;
+        margin-left: auto;
+    }
+
+    .transport{
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    .montage{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .überuns{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 910px){
+    
+    br{
+        display: none;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .mainbody{
+        padding: 40px;
+        margin-top: -10px;
+        margin-bottom: 200px;
+    }
+
+    .mainbody h1{
+        white-space: normal;
+        margin-top: 40px;
+    }
+
+    .mainbody h3{
+        white-space: normal;
+    }
+
+    .mainbody hr{
+    }
+
+    .mainbody p{
+        white-space: normal;
+    }
+
+    .mainbody button{
+        margin-top: 103px;
+    }
+}
+
+@media screen and (min-width:911px) and (max-width:1024px){
+    br{
+        display: none;
+    }
+
+    .topnavbar{
+        height: 90px;
+    }
+
+    .topnavbar ul{
+        gap: 5px;
+    }
+
+    .mainbody{
+        padding: 60px;
+        margin-top: -10px;
+        margin-bottom: 200px;
+    }
+
+    .mainbody h1{
+        white-space: normal;
+    }
+
+    .mainbody h3{
+        white-space: normal;
+        margin-top: -10px;
+    }
+
+    .mainbody p{
+        white-space: normal;
+    }
+
+    .mainbody button{
+        margin-top: 153px;
+    }
+
+    
+}
+
+@media screen and (min-width:1025px) and (max-width:1229px){
+    br{
+        display: none;
+    }
+
+    .mainbody{
+        padding: 60px;
+        margin-top: 60px;
+        margin-bottom: 200px;
+    }
+
+    .mainbody h1{
+        margin-right: 60px;
+        margin-left: 60px;
+        white-space: normal;
+    }
+
+    .mainbody button{
+        margin-top: 170px;
+    }
+
+    .mainbody p{
+        white-space: normal;
+    }
+
+
+}
