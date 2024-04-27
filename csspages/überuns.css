@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    padding: 0 20px;
+    background-color: #10828d;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat";
+}
+
+header a{
+    text-decoration: none;
+}
+
+#brand{
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+#brand a{
+    color: white;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    text-transform: uppercase;
+}
+
+ul a{
+    color: white;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+#burger-nav{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#burger-nav div{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    background-color:#10828d;
+    width: 200px;
+    height: 400px;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    height: calc(100vh - 50px);
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.mainbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 300px;
+    margin-top: -260px;
+}
+
+.mainbody h1{
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 2.9em;
+    text-transform: uppercase;
+}
+
+.mainbody hr{
+    margin-top: -10px;
+    background: black;
+    height: 1px;
+    border: none;
+    width: 600px;
+}
+
+.mainbody p{
+    font-family: "Montserrat";
+    margin-top: 60px;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3em;
+    white-space: nowrap;
+}
+
+.mainbody img{
+    height: 500px;
+    width: 500px;
+    margin-top: 80px;
+}
+
+#bottomnavbar{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(194, 194, 194);
+    margin-top: -70px;
+}
