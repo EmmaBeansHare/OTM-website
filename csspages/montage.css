@@ -17,16 +17,24 @@ header a{
     text-decoration: none;
 }
 
-#brand{
-    font-size: 3em;
-    font-weight: 100;
-    color: white;
-    margin-left: 20px;
-    text-transform: uppercase;
+.brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
 }
 
-#brand a{
+.brand img{
+    height: 90px;
+    width: auto;
+}
+
+.brand h1{
     color: white;
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: "Poiret One";
+    margin-left: -15px;
 }
 
 ul{
@@ -41,6 +49,7 @@ ul{
 
 ul a{
     color: white;
+    font-size: 0.9rem;
 }
 
 ul li:hover{
@@ -99,7 +108,7 @@ ul li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 420px;
+    padding: 405px;
     margin-top: -360px;
 }
 
@@ -108,11 +117,13 @@ ul li:hover{
     font-weight: 200;
     font-size: 3em;
     text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .mainbody hr{
     margin-top: -20px;
-    width: 900px;
+    width: 90%;
     height: 1px;
     background: black;
     border: none;
@@ -138,7 +149,7 @@ ul li:hover{
 .textone img{
     width: 400px;
     height: auto;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .texttwo{
@@ -161,7 +172,7 @@ ul li:hover{
 .texttwo img{
     width: 400px;
     height: auto;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .textthree{
@@ -187,24 +198,63 @@ ul li:hover{
     white-space: nowrap;
 }
 
-.textfour{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    font-family: "Montserrat";
-    padding-left: 350px;
-    padding-right: 350px;
-    text-align: center;
-    white-space: nowrap;
+.textthree a{
+    color: #fca655;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.textthree a:hover{
+    text-decoration: underline 1px #fca655;
 }
 
 
 #bottomnavbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
     width: 100%;
     height: 180px;
-    background-color: rgb(194, 194, 194);
-    margin-top: -70px;
+    gap: 300px;
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    margin-top: -180px;
 }
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover{
+    text-decoration: underline white 1px;
+}
+
+.icons{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.icons img{
+    height: 40px;
+    width: auto;
+}
+
+.icons a{
+    transition: ease-in-out 0.3s;
+}
+
+.icons a:hover{
+    transform: scale(1.1);
+}
+
 
 @media screen and (max-width: 390px){
     br{
@@ -214,6 +264,23 @@ ul li:hover{
     header{
         height: 80px;
     }
+
+    .brand{
+        margin-left: -15px;
+        flex-direction: column;
+        margin-top: 9px;
+    }
+
+    .brand img{
+        height: 40px;
+        margin-left: -120px;
+    }
+
+    .brand h1{
+        font-size: 1.3rem;
+        margin-left: 0px;
+        margin-top: -9px;
+    }
     
     header nav{
         display: none;
@@ -221,12 +288,6 @@ ul li:hover{
 
     #burger-nav{
         display: block;
-    }
-
-    #brand{
-        font-size: 2.4em;
-        font-weight: 100;
-        margin-left: 10px;
     }
 
     .mobile-menu{
@@ -244,7 +305,9 @@ ul li:hover{
     }
 
     .mainbody h1{
-        font-size: 2.6em;
+        white-space: normal;
+        font-size: 2.2em;
+
     }
 
     .mainbody hr{
@@ -253,12 +316,16 @@ ul li:hover{
 
     .textone{
         align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
         flex-direction: column;
     }
     
     .textonetext{
         white-space: normal;
+    }
+
+    .textonetext h3{
+        font-size: 1.5rem;
     }
 
     .textonetext p{
@@ -280,6 +347,10 @@ ul li:hover{
     .texttwotext{
         white-space: normal;
     }
+
+    .texttwotext h3{
+        font-size: 1.5rem;
+    }
     
     .texttwotext p{
         margin-top: -20px;
@@ -299,25 +370,26 @@ ul li:hover{
         font-size: 0.9em;
     }
 
+    .textthree h3{
+        font-size: 1.3rem;
+    }
+
     .textthree p{
         white-space: normal;
     }
 
-    .textfour{
-        white-space: normal;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-top: 40px;
-        text-align: left;
-        font-size: 0.9em;
-    }
-
-    .textfour a{
-        text-align: center;
-    }
-
     #bottomnavbar{
+        flex-direction: column;
         margin-top: 50px;
+        gap: 20px;
+    }
+
+    .links{
+        margin-left: 10px;
+    }
+
+    .icons{
+        margin-left: 10px;
     }
 }
 
@@ -329,6 +401,18 @@ ul li:hover{
     header{
         height: 80px;
     }
+
+    .brand{
+        margin-left: -15px;
+    }
+
+    .brand img{
+        height: 50px;
+    }
+
+    .brand h1{
+        font-size: 1.4rem;
+    }
     
     header nav{
         display: none;
@@ -336,12 +420,6 @@ ul li:hover{
 
     #burger-nav{
         display: block;
-    }
-
-    #brand{
-        font-size: 2.6em;
-        font-weight: 100;
-        margin-left: 10px;
     }
 
     .mobile-menu{
@@ -359,7 +437,8 @@ ul li:hover{
     }
 
     .mainbody h1{
-        font-size: 2.8em;
+        white-space: normal;
+        font-size: 2.4rem;
     }
 
     .mainbody hr{
@@ -368,12 +447,16 @@ ul li:hover{
 
     .textone{
         align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
         flex-direction: column;
     }
     
     .textonetext{
         white-space: normal;
+    }
+
+    .textonetext h3{
+        font-size: 1.7rem;
     }
 
     .textonetext p{
@@ -395,6 +478,10 @@ ul li:hover{
     .texttwotext{
         white-space: normal;
     }
+
+    .texttwotext h3{
+        font-size: 1.8rem;
+    }
     
     .texttwotext p{
         margin-top: -20px;
@@ -418,27 +505,40 @@ ul li:hover{
         white-space: normal;
     }
 
-    .textfour{
-        white-space: normal;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-top: 40px;
-        text-align: left;
-        font-size: 0.9em;
-    }
-
-    .textfour a{
-        text-align: center;
+    .textthree h3{
+        font-size: 1.6rem;
     }
 
     #bottomnavbar{
+        flex-direction: column;
         margin-top: 50px;
+        gap: 20px;
+    }
+
+    .links{
+        margin-left: 10px;
+    }
+
+    .icons{
+        margin-left: 10px;
     }
 }
 
 @media screen and (min-width: 500px) and (max-width: 787px){
     br{
         display: none;
+    }
+
+    .brand{
+        margin-left: 0px;
+    }
+
+    .brand img{
+        height: 60px;
+    }
+
+    .brand h1{
+        font-size: 1.7rem;
     }
     
     header nav{
@@ -447,11 +547,6 @@ ul li:hover{
 
     #burger-nav{
         display: block;
-    }
-
-    #brand{
-        font-size: 2.8em;
-        font-weight: 100;
     }
 
     ul {
@@ -464,13 +559,18 @@ ul li:hover{
         margin-top: -10px;
     }
 
+    .mainbody h1{
+        white-space: normal;
+        font-size: 2.6rem;
+    }
+
     .mainbody hr{
         width: 100%;
     }
 
     .textone{
         align-items: center;
-        margin-top: 80px;
+        margin-top: 50px;
         flex-direction: column;
     }
     
@@ -489,7 +589,7 @@ ul li:hover{
 
     .texttwo{
         align-items: center;
-        margin-top: 120px;
+        margin-top: 80px;
         flex-direction: column;
     }
 
@@ -531,12 +631,27 @@ ul li:hover{
 
     #bottomnavbar{
         margin-top: 50px;
+        gap: 70px;
     }
+
+
 }
 
 @media screen and (min-width: 788px) and (max-width: 910px){
     br{
         display: none;
+    }
+
+    .brand{
+        margin-left: 0px;
+    }
+
+    .brand img{
+        height: 70px;
+    }
+
+    .brand h1{
+        font-size: 1.8rem;
     }
     
     header nav{
@@ -547,11 +662,6 @@ ul li:hover{
         display: block;
     }
 
-    #brand{
-        font-size: 2.8em;
-        font-weight: 100;
-    }
-
     ul {
         font-size: 0.9em;
         font-weight: 400;
@@ -560,6 +670,15 @@ ul li:hover{
     .mainbody{
         padding: 50px;
         margin-top: -10px;
+    }
+
+    .mainbody h1{
+        white-space: normal;
+        font-size: 2.8rem;
+    }
+
+    .mainbody hr{
+        width: 100%;
     }
 
     .textone{
@@ -625,19 +744,40 @@ ul li:hover{
         display: none;
     }
 
-    #brand{
-        font-size: 2.8em;
-        font-weight: 100;
+    .brand{
+        margin-left: -15px;
+    }
+
+    .brand img{
+        height: 55px;
+    }
+
+    .brand h1{
+        font-size: 1.7rem;
     }
 
     ul {
-        font-size: 0.9em;
         font-weight: 400;
+        gap: 35px;
+    }
+
+    ul a{
+        font-size: 0.8rem;
     }
 
     .mainbody{
         padding: 50px;
         margin-top: -20px;
+    }
+
+    .mainbody h1{
+        white-space: normal;
+        font-size: 2.9rem;
+    }
+
+    .mainbody hr{
+        width: 100%;
+
     }
 
     .textone{
@@ -678,9 +818,29 @@ ul li:hover{
         display: none;
     }
 
+    .brand{
+        margin-left: -5px;
+    }
+
+    .brand img{
+        height: 65px;
+    }
+
+    .brand h1{
+        font-size: 1.9rem;
+    }
+
+    ul a{
+        font-size: 0.8rem;
+    }
+
     .mainbody{
         padding: 50px;
         margin-top: -20px;
+    }
+
+    .mainbody hr{
+        width: 100%;
     }
 
     .textone{

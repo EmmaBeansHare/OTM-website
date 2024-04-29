@@ -17,16 +17,24 @@ header a{
     text-decoration: none;
 }
 
-#brand{
-    font-size: 3em;
-    font-weight: 100;
-    color: white;
-    margin-left: 20px;
-    text-transform: uppercase;
+.brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
 }
 
-#brand a{
+.brand img{
+    height: 90px;
+    width: auto;
+}
+
+.brand h1{
     color: white;
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: "Poiret One";
+    margin-left: -15px;
 }
 
 ul{
@@ -41,6 +49,7 @@ ul{
 
 ul a{
     color: white;
+    font-size: 0.9rem;
 }
 
 ul li:hover{
@@ -133,10 +142,48 @@ ul li:hover{
 }
 
 #bottomnavbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
     width: 100%;
     height: 180px;
-    background-color: rgb(194, 194, 194);
-    margin-top: -70px;
+    gap: 300px;
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover{
+    text-decoration: underline white 1px;
+}
+
+.icons{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.icons img{
+    height: 40px;
+    width: auto;
+}
+
+.icons a{
+    transition: ease-in-out 0.3s;
+}
+
+.icons a:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 910px){
@@ -149,7 +196,73 @@ ul li:hover{
     }
 }
 
-@media screen and (max-width: 478px){
+@media screen and (max-width: 390px){
+    br{
+        display: none;
+    }
+    
+    header{
+        height: 70px;
+    }
+    
+    .brand{
+        margin-left: -17px;
+    }
+        
+    .brand img{
+        height: 40px;
+    }
+        
+    .brand h1{
+        font-size: 1.3rem;
+    }
+    
+    .mobile-menu{
+        top: 50px;
+    }
+        
+    .mainbody{
+        padding: 20px;
+        margin-top: -20px;
+    }
+    
+    .mainbody h1{
+        font-size: 2.3em;
+    }
+    
+    .mainbody hr{
+        width: 100%;
+    }
+        
+    .mainbody p{
+        white-space: normal;
+        font-size: 0.8em;
+        margin-top: 30px;
+    }
+    
+    .mainbody img{
+        height: 300px;
+        width: 300px;
+        margin-top: 40px;
+    }
+        
+    #bottomnavbar{
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .links{
+        margin-left: 10px;
+    }
+
+    .icons{
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (min-width: 391px) and (max-width: 478px){
     br{
     display: none;
     }
@@ -158,9 +271,16 @@ ul li:hover{
     height: 70px;
     }
 
-    #brand{
-    font-size: 2.4em;
-    margin-left: 10px;
+    .brand{
+        margin-left: -15px;
+    }
+    
+    .brand img{
+        height: 45px;
+    }
+    
+    .brand h1{
+        font-size: 1.5rem;
     }
 
     .mobile-menu{
@@ -168,8 +288,8 @@ ul li:hover{
     }
     
     .mainbody{
-    padding: 40px;
-    margin-top: -40px;
+    padding: 20px;
+    margin-top: -20px;
     }
 
     .mainbody h1{
@@ -193,9 +313,21 @@ ul li:hover{
     }
     
     #bottomnavbar{
+        flex-direction: column;
         margin-top: 30px;
+        gap: 20px;
+    }
+
+    .links{
+        margin-left: 10px;
+    }
+
+    .icons{
+        margin-left: 10px;
     }
 }
+
+
 
 @media screen and (min-width: 479px) and (max-width: 680px){
     br{
@@ -206,9 +338,16 @@ ul li:hover{
     height: 80px;
     }
 
-    #brand{
-    font-size: 2.6em;
-    margin-left: 10px;
+    .brand{
+        margin-left: -10px;
+    }
+    
+    .brand img{
+        height: 50px;
+    }
+    
+    .brand h1{
+        font-size: 1.6rem;
     }
 
     .mobile-menu{
@@ -241,14 +380,76 @@ ul li:hover{
     }
     
     #bottomnavbar{
-    margin-top: 30px;
+        margin-top: 30px;
+        gap: 50px;
     }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1215px){
-   
+@media screen and (min-width: 681px) and (max-width: 1024px){
+    br{
+        display: none;
+    }
+
+    .brand{
+        margin-left: 0px;
+    }
+    
+    .brand img{
+        height: 60px;
+    }
+    
+    .brand h1{
+        font-size: 1.8rem;
+    }
+    
+    ul{
+        gap: 30px;
+    }
+    
+    ul a{
+        font-size: 0.7rem;
+    }
+    
+    .mainbody{
+        padding: 70px;
+        margin-top: -30px;
+    }
+    
+    .mainbody hr{
+        width: 100%;
+    }
+    
+    .mainbody p{
+        white-space: normal;
+    
+    }
+    
+    #bottomnavbar{
+        margin-top: 30px;
+        gap: 150px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1365px){
     br{
     display: none;
+    }
+
+    .brand img{
+        height: 70px;
+    }
+
+    .brand h1{
+        font-size: 2rem;
+
+    }
+
+    ul{
+        gap: 40px;
+    }
+
+    ul a{
+        font-size: 0.8rem;
     }
 
     .mainbody{
