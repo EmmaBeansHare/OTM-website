@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*====Header====*/
+
 header{
     padding: 0 20px;
     background-color: #10828d;
@@ -62,6 +64,8 @@ ul li:hover{
     transition: ease-in-out 0.3s;
 }
 
+/*====Mobile Menu====*/
+
 #burger-nav{
     margin: auto 0;
     display: none;
@@ -108,7 +112,7 @@ ul li:hover{
     padding-bottom: 20px;
 }
 
-
+/*====The body====*/
 
 .mainbody{
     display: flex;
@@ -321,6 +325,8 @@ ul li:hover{
     padding-left: 10px;
 }
 
+/*====Footer====*/
+
 #bottomnavbar{
     display: flex;
     justify-content: center;
@@ -371,6 +377,7 @@ ul li:hover{
     transform: scale(1.1);
 }
 
+/*====Media Queries====*/
 
 
 @media screen and (max-width: 365px){
