@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 /*====Header====*/
@@ -37,26 +38,27 @@ header a{
     font-size: 2.2rem;
     font-family: "Poiret One";
     margin-left: -15px;
+    padding-right: 10px;
 }
 
 ul{
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     text-transform: uppercase;
+    list-style: none;
+    gap: 20px 35px;
 }
 
 ul a{
     color: white;
     font-size: 0.9rem;
+    transition: ease-in-out 0.3s;
+    padding:  5px 10px;
+    border: 1px solid #10828d;
 }
 
-ul li:hover{
-    transform: scale(1.1);
-    transition: ease-in-out 0.3s;
+ul a:hover{
+    border: 1px solid white;
 }
 
 /*====Mobile Menu====*/
@@ -778,14 +780,6 @@ ul li:hover{
         font-size: 1.9rem;
     }
 
-    ul{
-        gap: 40px;
-    }
-
-    ul a{
-        font-size: 0.9rem;
-    }
-
     .mainbody{
         padding: 50px;
         margin-top: -20px;
@@ -815,4 +809,14 @@ ul li:hover{
         margin-top: 50px;
     }
 
+}
+
+@media screen and (min-width:1190px) and (max-width:1250px){
+    ul{
+        gap: 15;
+    }
+
+    ul a{
+        font-size: 0.8rem;
+    }
 }

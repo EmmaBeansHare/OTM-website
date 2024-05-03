@@ -40,28 +40,29 @@ header a{
     font-size: 2.2rem;
     font-family: "Poiret One";
     margin-left: -15px;
+    padding-right: 20px;
 }
 
 
 
 ul{
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     text-transform: uppercase;
+    list-style: none;
+    gap: 20px 35px;
 }
 
 ul a{
     color: white;
     font-size: 0.9rem;
+    transition: ease-in-out 0.3s;
+    padding: 5px 10px;
+    border: 1px solid #10828d;
 }
 
-ul li:hover{
-    transform: scale(1.2);
-    transition: ease-in-out 0.3s;
+ul a:hover{
+    border: 1px solid white;
 }
 
 /*====Mobile Menu====*/
@@ -99,18 +100,20 @@ ul li:hover{
     flex-direction: column;
     background-color:#10828d;
     width: 200px;
-    height: 400px;
+    height: 450px;
 }
 
 .mobile-menu{
     display: none;
     position: absolute;
-    top: 80px;
+    text-align: center;
+    gap: 37px;
+    top: 90px;
     right: 0px;
-    height: calc(100vh - 50px);
     width: 100%;
-    padding-bottom: 20px;
-}
+    padding-top: 10px;
+} 
+
 
 /*====The body====*/
 
@@ -840,11 +843,11 @@ ul li:hover{
     }
 
     ul{
-        gap: 20px;
+        gap: 10px 0;
     }
 
     ul a{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .mainbody{
@@ -892,7 +895,7 @@ ul li:hover{
     }
 
     ul{
-        gap: 30px;
+        gap: 15px;
     }
 
     ul a{
@@ -918,6 +921,5 @@ ul li:hover{
     .mainbody p{
         white-space: normal;
     }
-
-
 }
+
