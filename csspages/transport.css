@@ -41,7 +41,7 @@ header a{
     padding-right: 10px;
 }
 
-ul{
+.navul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-transform: uppercase;
@@ -49,16 +49,17 @@ ul{
     gap: 20px 35px;
 }
 
-ul a{
-    color: white;
+.navul a{
+    color: rgba(255, 255, 255, 0.642);
     font-size: 0.9rem;
     transition: ease-in-out 0.3s;
     padding:  5px 10px;
     border: 1px solid #10828d;
 }
 
-ul a:hover{
+.navul a:hover{
     border: 1px solid white;
+    color: white;
 }
 
 /*====Mobile Menu====*/
@@ -96,17 +97,24 @@ ul a:hover{
     flex-direction: column;
     background-color:#10828d;
     width: 200px;
-    height: 400px;
+    height: 450px;
 }
 
 .mobile-menu{
     display: none;
     position: absolute;
+    gap: 37px;
     top: 80px;
     right: 0px;
-    height: calc(100vh - 50px);
     width: 100%;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+} 
+
+.mobile-menu li, li a{
+    list-style: none;
+    color: white;
 }
 
 /*====Main Menu====*/
@@ -313,11 +321,6 @@ ul a:hover{
         top: 60px;
     }
 
-    ul {
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
     .mainbody{
         padding: 20px;
         margin-top: -10px;
@@ -433,11 +436,6 @@ ul a:hover{
         top: 60px;
     }
 
-    ul {
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
     .mainbody{
         padding: 50px;
         margin-top: -40px;
@@ -545,11 +543,6 @@ ul a:hover{
         display: block;
     }
 
-    ul {
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
     .mainbody{
         padding: 50px;
         margin-top: -10px;
@@ -645,12 +638,6 @@ ul a:hover{
         display: block;
     }
 
-
-    ul {
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
     .mainbody{
         padding: 50px;
         margin-top: -10px;
@@ -722,13 +709,16 @@ ul a:hover{
 
     .brand h1{
         font-size: 1.8rem;
+        padding-right: 0px;
     }
 
-    ul{
-        gap: 30px;
+    .navul{
+        gap: 10px 0px;
+        padding-left: 10px;
+        margin-right: -10px;
     }
 
-    ul a{
+    .navul a{
         font-size: 0.8rem;
     }
 
@@ -780,6 +770,14 @@ ul a:hover{
         font-size: 1.9rem;
     }
 
+    .navul{
+        gap: 10px 8px;
+    }
+
+    .navul a{
+        font-size: 0.8rem;
+    } 
+
     .mainbody{
         padding: 50px;
         margin-top: -20px;
@@ -811,12 +809,12 @@ ul a:hover{
 
 }
 
-@media screen and (min-width:1190px) and (max-width:1250px){
-    ul{
-        gap: 15;
+@media screen and (min-width:1190px) and (max-width:1255px){
+    .navul{
+        gap: 13px;
     }
 
-    ul a{
+    .navul a{
         font-size: 0.8rem;
     }
 }

@@ -39,24 +39,25 @@ header a{
     margin-left: -15px;
 }
 
-ul{
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 50px;
+.navul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     text-transform: uppercase;
+    list-style: none;
+    gap: 20px 35px;
 }
 
-ul a{
-    color: white;
+.navul a{
+    color: rgba(255, 255, 255, 0.642);
     font-size: 0.9rem;
+    transition: ease-in-out 0.3s;
+    padding:  5px 10px;
+    border: 1px solid #10828d;
 }
 
-ul li:hover{
-    transform: scale(1.1);
-    transition: ease-in-out 0.3s;
+.navul a:hover{
+    border: 1px solid white;
+    color: white;
 }
 
 /*====Mobile Menu====*/
@@ -94,17 +95,22 @@ ul li:hover{
     flex-direction: column;
     background-color:#10828d;
     width: 200px;
-    height: 400px;
+    height: 450px;
 }
 
 .mobile-menu{
     display: none;
     position: absolute;
+    gap: 37px;
     top: 80px;
     right: 0px;
-    height: calc(100vh - 50px);
     width: 100%;
     padding-bottom: 20px;
+}
+
+.mobile-menu li, li a{
+    list-style: none;
+    color: white;
 }
 
 /*====Main Body====*/
@@ -410,12 +416,14 @@ ul li:hover{
         font-size: 1.8rem;
     }
     
-    ul{
-        gap: 30px;
+    .navul{
+        gap: 10px 0px;
+        padding-left: 10px;
+        margin-right: -18px;
     }
-    
-    ul a{
-        font-size: 0.7rem;
+
+    .navul a{
+        font-size: 0.8rem;
     }
     
     .mainbody{
@@ -449,14 +457,14 @@ ul li:hover{
 
     .brand h1{
         font-size: 2rem;
-
     }
 
-    ul{
-        gap: 40px;
+    .navul{
+        gap: 10px 8px;
+        padding-left: 10px;
     }
 
-    ul a{
+    .navul a{
         font-size: 0.8rem;
     }
 
