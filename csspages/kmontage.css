@@ -1,0 +1,827 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*====Header====*/
+
+header{
+    padding: 0 20px;
+    background-color: #10828d;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat";
+}
+
+header a{
+    text-decoration: none;
+}
+
+.brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.brand img{
+    height: 90px;
+    width: auto;
+}
+
+.brand h1{
+    color: white;
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: "Poiret One";
+    margin-left: -15px;
+    padding-right: 10px;
+}
+
+.navul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: uppercase;
+    list-style: none;
+    gap: 20px 35px;
+}
+
+.navul a{
+    color: rgba(255, 255, 255, 0.642);
+    font-size: 0.9rem;
+    transition: ease-in-out 0.3s;
+    padding:  5px 5px;
+    border: 1px solid #10828d;
+}
+
+.navul a:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+/*====Mobile Menu====*/
+
+#burger-nav{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#burger-nav div{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    background-color:#10828d;
+    width: 200px;
+    height: 450px;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    gap: 37px;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+} 
+
+.mobile-menu li, li a{
+    list-style: none;
+    color: white;
+}
+
+/*====Main Menu====*/
+
+.mainbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 360px;
+    margin-top: -300px;
+}
+
+.mainbody h1{
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 3em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.mainbody hr{
+    margin-top: -20px;
+    width: 90%;
+    height: 1px;
+    background: black;
+    border: none;
+
+}
+
+.textone{
+    display: flex;
+    margin-top: 140px;
+}
+
+.textonetext{
+    font-family: "Montserrat";
+    white-space: nowrap;
+}
+
+.textonetext h3{
+    font-weight: 300;
+    font-size: 1.9em;
+    text-transform: uppercase;
+}
+
+.textone img{
+    width: 400px;
+    height: auto;
+    padding-left: 5px;
+}
+
+.texttwo{
+    display: flex;
+    margin-top: 180px;
+}
+
+.texttwotext{
+    font-family: "Montserrat";
+    white-space: nowrap;
+}
+
+.texttwotext h3{
+    font-weight: 300;
+    font-size: 1.9em;
+    text-transform: uppercase;
+}
+
+.texttwo img{
+    width: 400px;
+    height: auto;
+    padding-left: 5px;
+}
+
+.textthree{
+    display: flex;
+    text-align: cente;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 80px;
+}
+
+.textthree h3{
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.textthree p{
+    font-family: "Montserrat";
+    margin-top: -10px;
+    white-space: nowrap;
+}
+
+.textthree a{
+    color: #fca655;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.textthree a:hover{
+    text-decoration: underline 1px #fca655;
+}
+
+.textfour{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: "Montserrat";
+    padding-left: 350px;
+    padding-right: 350px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/*====Footer====*/
+
+#bottomnavbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
+    width: 100%;
+    height: 180px;
+    gap: 300px;
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover{
+    text-decoration: underline white 1px;
+}
+
+.icons{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.icons img{
+    height: 40px;
+    width: auto;
+}
+
+.icons a{
+    transition: ease-in-out 0.3s;
+}
+
+.icons a:hover{
+    transform: scale(1.1);
+}
+
+/*====Media Queries====*/
+
+@media screen and (max-width: 390px){
+    br{
+        display: none;
+    }
+
+    .brand{
+        margin-left: -15px;
+        flex-direction: column;
+        margin-top: 9px;
+    }
+
+    .brand img{
+        height: 40px;
+        margin-left: -120px;
+    }
+
+    .brand h1{
+        font-size: 1.3rem;
+        margin-left: 0px;
+        margin-top: -9px;
+    }
+
+    header{
+        height: 80px;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .mobile-menu{
+        top: 60px;
+    }
+
+    .mainbody{
+        padding: 20px;
+        margin-top: -10px;
+    }
+
+    .mainbody h1{
+        font-size: 2.4rem;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .br{
+        display: block;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .textone{
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    
+    .textonetext{
+        white-space: normal;
+    }
+
+    .textonetext p{
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .textone img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .texttwo{
+        align-items: center;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+    
+    .texttwotext p{
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .texttwo img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .textthree{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 60;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    #bottomnavbar{
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .links{
+        margin-left: 10px;
+    }
+
+    .icons{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 555px){
+    br{
+        display: none;
+    }
+
+    .brand{
+        margin-left: -15px;
+    }
+
+    .brand img{
+        height: 50px;
+    }
+
+    .brand h1{
+        font-size: 1.4rem;
+    }
+
+    header{
+        height: 80px;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .mobile-menu{
+        top: 60px;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -40px;
+    }
+
+    .mainbody h1{
+        font-size: 2.6rem;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .br{
+        display: block;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .textone{
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    
+    .textonetext{
+        white-space: normal;
+    }
+
+    .textonetext p{
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .textone img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .texttwo{
+        align-items: center;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+    
+    .texttwotext p{
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .texttwo img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .textthree{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 60;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    #bottomnavbar{
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .links{
+        margin-left: 10px;
+    }
+
+    .icons{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 556px) and (max-width: 787px){
+    br{
+        display: none;
+    }
+
+    .brand{
+        margin-left: 0px;
+    }
+
+    .brand img{
+        height: 70px;
+    }
+
+    .brand h1{
+        font-size: 1.8rem;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -10px;
+    }
+
+    .mainbody h1{
+        white-space: normal;
+        text-align: center;
+        font-size: 2.6rem;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .textone{
+        align-items: center;
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    
+    .textonetext{
+        white-space: normal;
+    }
+
+    .textonetext p{
+        margin-top: -20px;
+    }
+
+    .textone img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .texttwo{
+        align-items: center;
+        margin-top: 120px;
+        flex-direction: column;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+    
+    .texttwotext p{
+        margin-top: -20px;
+    }
+
+    .texttwo img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .textthree{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 60;
+        text-align: left;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+        gap: 100px;
+    }
+}
+
+@media screen and (min-width: 788px) and (max-width: 910px){
+    br{
+        display: none;
+    }
+
+    .brand{
+        margin-left: 0px;
+    }
+
+    .brand img{
+        height: 70px;
+    }
+
+    .brand h1{
+        font-size: 1.8rem;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -10px;
+    }
+
+    .textone{
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .textonetext{
+        white-space: normal;
+    }
+
+    .textonetext p{
+        margin-top: -20px;
+    }
+
+    .textone img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .texttwo{
+        align-items: center;
+        margin-top: 120px;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+    
+    .texttwotext p{
+        margin-top: -20px;
+    }
+
+    .texttwo img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .textthree{
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 60px;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 911px) and (max-width: 1024px){
+    br{
+        display: none;
+    }
+
+    .brand{
+        margin-left: -15px;
+    }
+
+    .brand img{
+        height: 55px;
+    }
+
+    .brand h1{
+        font-size: 1.8rem;
+        padding-right: 0px;
+    }
+
+    .navul{
+        gap: 10px 0px;
+        padding-left: 10px;
+        margin-right: -10px;
+    }
+
+    .navul a{
+        font-size: 0.8rem;
+    }
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -20px;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .textone{
+        margin-top: 90px;
+    }
+
+    .textonetext{
+        white-space: normal;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1190px){
+    br{
+        display: none;
+    }
+
+    .brand{
+        margin-left: 0px;
+    }
+
+    .brand img{
+        height: 65px;
+    }
+
+    .brand h1{
+        font-size: 1.9rem;
+    }
+
+    .navul{
+        gap: 10px 8px;
+    }
+
+    .navul a{
+        font-size: 0.8rem;
+    } 
+
+    .mainbody{
+        padding: 50px;
+        margin-top: -20px;
+    }
+
+    .mainbody hr{
+        width: 100%;
+    }
+
+    .textone{
+        margin-top: 90px;
+    }
+
+    .textonetext{
+        white-space: normal;
+    }
+
+    .texttwotext{
+        white-space: normal;
+    }
+
+    .textthree p{
+        white-space: normal;
+    }
+
+    #bottomnavbar{
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width:1190px) and (max-width:1255px){
+    .navul{
+        gap: 13px;
+    }
+
+    .navul a{
+        font-size: 0.8rem;
+    }
+}

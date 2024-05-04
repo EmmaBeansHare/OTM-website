@@ -51,7 +51,7 @@ header a{
     color: rgba(255, 255, 255, 0.642);
     font-size: 0.9rem;
     transition: ease-in-out 0.3s;
-    padding:  5px 10px;
+    padding:  5px 5px;
     border: 1px solid #10828d;
 }
 

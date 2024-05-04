@@ -1,0 +1,398 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/*====Header====*/
+
+header{
+    padding: 0 20px;
+    background-color: #10828d;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat";
+}
+
+header a{
+    text-decoration: none;
+}
+
+.brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.brand img{
+    height: 90px;
+    width: auto;
+}
+
+.brand h1{
+    color: white;
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: "Poiret One";
+    margin-left: -15px;
+}
+
+.navul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: uppercase;
+    list-style: none;
+    gap: 20px 35px;
+}
+
+.navul a{
+    color: rgba(255, 255, 255, 0.642);
+    font-size: 0.9rem;
+    transition: ease-in-out 0.3s;
+    padding:  5px 5px;
+    border: 1px solid #10828d;
+}
+
+.navul a:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+/*====Mobile Menu====*/
+
+#burger-nav{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#burger-nav div{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    background-color:#10828d;
+    width: 200px;
+    height: 450px;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    gap: 37px;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+} 
+
+.mobile-menu li, li a{
+    list-style: none;
+    color: white;
+}
+
+/*===The main body===*/
+
+.mainbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat";
+}
+
+.mainbody h1{
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    width:  850px;
+    height: 100%;
+    padding: 30px;
+    border: 1px solid black;
+    box-shadow:
+    0 0 5px black;
+}
+
+.maincontainer h3{
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.maincontainer p{
+    margin-top: -10px;
+}
+
+.lowerbox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 40px;
+    margin-top: 50px;
+}
+
+/*====Footer====*/
+
+#bottomnavbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
+    margin-top: 150px;
+    width: 100%;
+    height: 180px;
+    gap: 300px;
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover{
+    text-decoration: underline white 1px;
+}
+
+.icons{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.icons img{
+    height: 40px;
+    width: auto;
+}
+
+.icons a{
+    transition: ease-in-out 0.3s;
+}
+
+.icons a:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:530px){
+    .brand{
+        margin-left: -15px;
+        flex-direction: column;
+    }
+
+    .brand{
+        margin-left: -15px;
+        flex-direction: column;
+        margin-top: 9px;
+    }
+
+    .brand img{
+        height: 40px;
+        margin-left: -120px;
+    }
+
+    .brand h1{
+        font-size: 1.3rem;
+        margin-left: 0px;
+        margin-top: -9px;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .maincontainer{
+        width: 70%;
+    }
+
+    .lowerbox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottomnavbar{
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .links{
+        margin-left: 10px;
+    }
+
+    .icons{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width:531px) and (max-width: 700px){
+    .brand{
+        margin-left: -15px;
+    }
+
+    .brand img{
+        height: 55px;
+    }
+
+    .brand h1{
+        font-size: 1.8rem;
+        padding-right: 0px;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .maincontainer{
+        width: 70%;
+    }
+
+    .lowerbox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottomnavbar{
+        gap: 80px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width:910px){
+    .brand{
+        margin-left: -15px;
+    }
+
+    .brand img{
+        height: 55px;
+    }
+
+    .brand h1{
+        font-size: 1.8rem;
+        padding-right: 0px;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #burger-nav{
+        display: block;
+    }
+
+    .maincontainer{
+        width: 80%;
+    }
+
+    #bottomnavbar{
+        gap: 100px;
+    }
+}
+
+@media screen and (min-width:911px) and (max-width:1024px){
+    .brand{
+        margin-left: -15px;
+    }
+
+    .brand img{
+        height: 55px;
+    }
+
+    .brand h1{
+        font-size: 1.8rem;
+        padding-right: 0px;
+    }
+    
+    .navul{
+        gap: 10px 0px;
+        padding-left: 10px;
+        margin-right: -10px; 
+    }
+
+    .navul a{
+        font-size: 0.8rem;
+    }
+
+    .maincontainer{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1121px){
+    .brand{
+        margin-left: 0px;
+    }
+
+    .brand img{
+        height: 65px;
+    }
+
+    .brand h1{
+        font-size: 1.9rem;
+    }
+    
+    .navul{
+        gap: 10px 8px;
+    }
+
+    .navul a{
+        font-size: 0.8rem;
+    }
+
+    .maincontainer{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1122px) and (max-width:1245px){
+    .navul{
+        gap: 13px;
+    }
+
+    .navul a{
+        font-size: 0.8rem;
+    }
+}

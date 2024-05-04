@@ -17,7 +17,6 @@ header{
 }
 
 
-
 header a{
     text-decoration: none;
 }
@@ -57,7 +56,7 @@ header a{
     color: rgba(255, 255, 255, 0.642);
     font-size: 0.9rem;
     transition: ease-in-out 0.3s;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border: 1px solid #10828d;
 }
 
@@ -268,6 +267,136 @@ header a{
 }
 
 .montage img{
+    height: 400px;
+    width: auto;
+    padding-left: 10px;
+}
+
+.kmontage{
+    display: flex; 
+    flex-direction: row;
+    margin-top: 180px;
+    align-items: center;
+    
+}
+
+.kmontagetext{
+    display: flex;
+    font-family: "Montserrat";
+    flex-direction: column;
+}
+
+.kmontagetext h3{
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: -7px;
+}
+
+.kmontagetext hr{
+    width: 100%;
+    margin-top: 10px;
+    background: black;
+    height: 1px;
+    border: none;
+}
+
+.kmontagetext p{
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+
+.kmontagetext button{
+    margin-top: 200px;
+    padding: 10px;
+    width: 150px;
+    background-color: #fca655;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-size: 0.7em;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.kmontagetext button a{
+    text-decoration: none;
+    color: black;
+}
+
+.kmontagetext button:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.kmontage img{
+    height: 400px;
+    width: auto;
+    padding-left: 10px;
+}
+
+.entrümpelung{
+    display: flex; 
+    flex-direction: row;
+    margin-top: 180px;
+    align-items: center;
+    
+}
+
+.entrümpelungtext{
+    display: flex;
+    font-family: "Montserrat";
+    flex-direction: column;
+}
+
+.entrümpelungtext h3{
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: -7px;
+}
+
+.entrümpelungtext hr{
+    width: 100%;
+    margin-top: 10px;
+    background: black;
+    height: 1px;
+    border: none;
+}
+
+.entrümpelungtext p{
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+
+.entrümpelungtext button{
+    margin-top: 200px;
+    padding: 10px;
+    width: 150px;
+    background-color: #fca655;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-size: 0.7em;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.entrümpelungtext button a{
+    text-decoration: none;
+    color: black;
+}
+
+.entrümpelungtext button:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.entrümpelung img{
     height: 400px;
     width: auto;
     padding-left: 10px;
