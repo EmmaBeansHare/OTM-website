@@ -606,6 +606,16 @@ header a{
         flex-direction: column;
         margin-top: 30px;
     }
+
+    .kmontage{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .entrümpelung{
+        flex-direction: column;
+        margin-top: 30px;
+    }
     
     .überuns{
         flex-direction: column;
@@ -704,6 +714,16 @@ header a{
         flex-direction: column;
         margin-top: 30px;
     }
+
+    .kmontage{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .entrümpelung{
+        flex-direction: column;
+        margin-top: 30px;
+    }
     
     .überuns{
         flex-direction: column;
@@ -799,6 +819,16 @@ header a{
         flex-direction: column;
         margin-top: 50px;
     }
+
+    .kmontage{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .entrümpelung{
+        flex-direction: column;
+        margin-top: 50px;
+    }
     
     .überuns{
         flex-direction: column;
@@ -881,11 +911,23 @@ header a{
         flex-direction: column;
         margin-top: 30px;
     }
+
+    .kmontage{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .entrümpelung{
+        flex-direction: column;
+        margin-top: 30px;
+    }
     
     .überuns{
         flex-direction: column;
         margin-top: 30px;
     }
+
+    
 
     #bottomnavbar{
         gap: 100px;
